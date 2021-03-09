@@ -84,7 +84,7 @@ const TeacherForm = ({ selectedTeacher, add, gradeLevel, selectedTeacherAssgined
             </Form.Item>
          </Col>
          </Row>
-                  <Button className="btn-black" htmlType="submit">
+                  <Button className="btn-save" htmlType="submit">
                      <CheckCircleFilled type="check-circle" /> {values._id ? "Update": "Save"}
                   </Button>
                </Form>

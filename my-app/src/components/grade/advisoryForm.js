@@ -22,10 +22,10 @@ const TeacherForm = ({ selectedTeacher, add, gradeLevel, selectedTeacherAssgined
             <Spin spinning={loading} delay={500}>
                <Form className="p-30">
          <Row gutter={16}>
-         <Col span={12}>
+         <Col span={24}>
             {console.log(selectedTeacherAssgined)}
             <Form.Item label="Advisor" name="advisor">
-            <Select name="advisor" defaultValue={selectedTeacherAssgined ? selectedTeacherAssgined.teacher.firstName + " " + selectedTeacherAssgined.teacher.lastName : null}>
+               <Select name="advisor" defaultValue={selectedTeacherAssgined ? selectedTeacherAssgined.teacher.firstName + " " + selectedTeacherAssgined.teacher.lastName : null}>
                   {selectedTeacher.map(teacher => {
                      return <Option value={teacher._id}>{teacher.firstName + " " + teacher.lastName}</Option>
                   })}
@@ -34,7 +34,7 @@ const TeacherForm = ({ selectedTeacher, add, gradeLevel, selectedTeacherAssgined
             </Form.Item>
          </Col>
          </Row>
-                  <Button className="btn-black" htmlType="submit">
+                  <Button className="btn-save" htmlType="submit">
                      <CheckCircleFilled type="check-circle" /> {values._id ? "Update": "Save"}
                   </Button>
                </Form>

@@ -5,39 +5,39 @@ const GradeTable = ({ details, setSelectedListOfStudent }) => {
 
    const columns = [
       {
-         title: 'Id Number',
+         title: <b>Id Number</b>,
          dataIndex: 'idNumber',
       },
       {
-         title: 'First Name',
+         title: <b>First Name</b>,
          dataIndex: 'firstName',
       },
       {
-         title: 'Middle Name',
+         title: <b>Middle Name</b>,
          dataIndex: 'middleName',
       },
       {
-         title: 'Last Name',
+         title: <b>Last Name</b>,
          dataIndex: 'lastName',
       }, 
       {
-        title: 'Contact Number',
+        title: <b>Contact Number</b>,
         dataIndex: 'contactNumber',
       },  
       {
-        title: 'Email',
+        title: <b>Email</b>,
         dataIndex: 'email',
       },   
       {
-        title: 'Grade Level',
+        title: <b>Grade Level</b>,
         dataIndex: 'gradeLevel',
       },   
       {
-        title: 'Section',
+        title: <b>Section</b>,
         dataIndex: 'section',
       },   
       {
-        title: 'Action',
+        title: <b>Action</b>,
         dataIndex: 'action',
       },                            
    ];

@@ -5,43 +5,43 @@ const EmployeeTable = ({ details }) => {
 
    const columns = [
       {
-         title: 'Id Number',
+         title: <b>Id Number</b>,
          dataIndex: 'idNumber',
       },
       {
-         title: 'First Name',
+         title: <b>First Name</b>,
          dataIndex: 'firstName',
       },
       {
-         title: 'Middle Name',
+         title: <b>Middle Name</b>,
          dataIndex: 'middleName',
       },
       {
-         title: 'Last Name',
+         title: <b>Last Name</b>,
          dataIndex: 'lastName',
       },
       {
-         title: 'Gender',
+         title: <b>Gender</b>,
          dataIndex: 'gender',
       },
       {
-        title: 'Age',
+        title: <b>Age</b>,
         dataIndex: 'age',
       },   
       {
-        title: 'Contact Number',
+        title: <b>Contact Number</b>,
         dataIndex: 'contactNumber',
       },  
       {
-        title: 'Email',
+        title: <b>Email</b>,
         dataIndex: 'email',
       },   
       {
-        title: 'Role',
+        title: <b>Role</b>,
         dataIndex: 'role',
       },   
       {
-        title: 'Action',
+        title: <b>Action</b>,
         dataIndex: 'action',
       },                            
    ];

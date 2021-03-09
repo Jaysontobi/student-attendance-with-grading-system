@@ -30,19 +30,19 @@ const EmployeePage = () => {
 
   return (
     <Card className="h-82 p-70">
-    <Row>
-      <Col lg={{ span: 12 }}>
-        <Typography.Title level={3}>Admin List</Typography.Title>
+    <Row className="mt-15">
+      <Col lg={{ span: 14 }}>
+        <Typography.Title level={3} className="ml-15">Admin List</Typography.Title>
       </Col>
-      <Col lg={{ span: 12 }}>
-        <Input onChange={(e)=> filterAdmin(e.target.value)}/>
-        <Button  className="addUser btn-black" onClick={()=> showUser()}>
-          <PlusCircleOutlined type="plus-circle" /> Add User
-             </Button>
+      <Col lg={{ span: 6 }}>
+        <Input placeholder="Search" onChange={(e)=> filterAdmin(e.target.value)}/>
         {/* <Button className="right" type="danger " onClick={() => console.log("lol")}>
           <MinusCircleOutlined type="minus-circle" /> Delete User
-             </Button> */}
+        </Button> */}
       </Col>
+      <Button  className="addUser btn-add" onClick={()=> showUser()}>
+        <PlusCircleOutlined type="plus-circle" /> Add User
+      </Button>
     </Row>
     <Row>
       <Col lg={{ span: "24" }}>

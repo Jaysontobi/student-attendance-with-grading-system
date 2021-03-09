@@ -29,19 +29,23 @@ const EmployeePage = () => {
 
   return (
     <Card className="h-82 p-70">
-    <Row>
-      <Col lg={{ span: 12 }}>
-        <Typography.Title level={3}>Student List</Typography.Title>
+    <Row className="mt-15">
+      <Col lg={{ span: 14 }}>
+        <Typography.Title level={3} className="ml-15">Student List</Typography.Title>
       </Col>
-      {JSON.parse(sessionStorage.user).role === "Admin" ?        <Col lg={{ span: 12 }}>
-        <Input onChange={(e)=> filterStudent(e.target.value)}/>
-        <Button  className="addUser btn-black" onClick={()=> showUser()}>
+      {JSON.parse(sessionStorage.user).role === "Admin" ?
+      <>
+        <Col lg={{ span: 6 }}>
+          <Input placeholder="Search" onChange={(e)=> filterStudent(e.target.value)}/>
+          {/* <Button className="right" type="danger " onClick={() => console.log("lol")}>
+            <MinusCircleOutlined type="minus-circle" /> Delete User
+          </Button> */}
+        </Col>
+        <Button  className="addUser btn-add" onClick={()=> showUser()}>
           <PlusCircleOutlined type="plus-circle" /> Add User
-             </Button>
-        {/* <Button className="right" type="danger " onClick={() => console.log("lol")}>
-          <MinusCircleOutlined type="minus-circle" /> Delete User
-             </Button> */}
-      </Col>: null}
+        </Button>
+      </>
+        : null}
 
     </Row>
     <Row>

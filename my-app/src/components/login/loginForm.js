@@ -19,23 +19,29 @@ const LoginForm = ({login}) => {
          render={
             ({ values, errors, touched, setFieldValue, isSubmitting }) => (
                <Spin spinning={isSubmitting}>
-                  <Form>
+                  <Form className="mt-10P">
                      <Row>
-                        <Col>
-                           <Form.Item label="Username" name="username">
+                        <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
+                           <b className="center">
+                              USERNAME:
+                           </b>
+                           <Form.Item name="username">
                               <Input name="username" />
                            </Form.Item>
                         </Col>
                      </Row>
                      <Row>
-                        <Col>
-                           <Form.Item label="Password" name="password">
+                        <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
+                           <b className="center">
+                              PASSWORD:
+                           </b>
+                           <Form.Item name="password">
                               <Input.Password name="password" />
                            </Form.Item>
                         </Col>
                      </Row>
                      <Row>
-                        <Col>
+                        <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
                            <Button type="dark" className="btn-login" htmlType="Submit">
                               Login
                         </Button>

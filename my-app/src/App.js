@@ -63,14 +63,16 @@ const App = () => {
           <BrowserRouter>
             <Layout>
               <BrowserRouter>
-                <Sider className="sider" collapsed={collapsed}>
-                  <Header className="sideBarHeader">
-                    {!collapsed ? <b className="font"> Grading System </b> : <b className="font"> GS </b>}
-                  </Header>
-                  <Content className="mt-20">
-                    <SiderMenu theme={theme} collapsed={collapsed} />
-                  </Content>
-                </Sider>
+                {JSON.parse(sessionStorage.user).role !== "Student" && JSON.parse(sessionStorage.user).role !== "Parent" ?
+                  <Sider className="sider" collapsed={collapsed}>
+                    <Header className="sideBarHeader text-white">
+                      {!collapsed ? <b className="font"> Grading System </b> : <b className="font"> GS </b>}
+                    </Header>
+                    <Content className="mt-20">
+                      <SiderMenu className="bg-greenSideBar" theme={theme} collapsed={collapsed} />
+                    </Content>
+                  </Sider>
+                : null}
                 <Layout>
                   <Header className="bg-white">
                     <a href onClick={() => {
@@ -79,7 +81,7 @@ const App = () => {
                       {/* <Icon className="text-black" type={collapsed ? 'menu-unfold' : 'menu-fold'} /> */}
                     </a>
                     {JSON.parse(sessionStorage.user).role === "Admin" ?                     <span className="left">
-                      Quater: 
+                      Quarter: &nbsp;
                     <Select onChange={
                       (value)=> 
                       onChangeFunction(value)
@@ -90,6 +92,14 @@ const App = () => {
                               <Option value="4">4</Option>
                            </Select>
                     </span> : null}
+
+                    {JSON.parse(sessionStorage.user).role === "Student" || JSON.parse(sessionStorage.user).role === "Parent" ?
+                      <span>
+                        <img width={45} src="/logo.png" className="mr-10"/>
+                        <b className="fs-20">Sto. Niño The Shepherd School</b>
+                      </span>
+                    : null}
+
 
                     <span className="right">
                       <Avatar className="avatar" src="https://picsum.photos/id/237/200/300" />

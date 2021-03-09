@@ -53,7 +53,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                   <Row gutter={16}>
 
                   <Col span={12}>
-                           <Card title="English" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>English</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">
@@ -82,7 +82,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                      </Col>
 
                   <Col span={12}>
-                           <Card title="Filipino" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>Filipino</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">
@@ -111,7 +111,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                      </Col>
 
                   <Col span={12}>
-                           <Card title="Science" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>Science</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">
@@ -140,7 +140,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                      </Col>
 
                   <Col span={12}>
-                           <Card title="Math" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>Math</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">
@@ -169,7 +169,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                      </Col>
                    
                      <Col span={12}>
-                           <Card title="MAPEH" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>MAPEH</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">
@@ -198,7 +198,7 @@ const Grade1EditForm = ({selectedOffspring }) => {
                      </Col>
 
                      <Col span={12}>
-                           <Card title="Values" disabled = {true} style={{ width: 300 }}>
+                           <Card title={<b>Values</b>} disabled = {true} style={{ width: 300 }}>
                            <Row gutter={16}>
                            <Col span={12}>
                            <Form.Item label="1st Q" name="values">

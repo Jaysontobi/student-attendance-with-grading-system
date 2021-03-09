@@ -5,31 +5,31 @@ const TimeKeepingTable = ({ details }) => {
 
    const columns = [
       {
-         title: 'Subject',
+         title: <b>Subject</b>,
          dataIndex: 'subject',
       },
       {
-        title: '1st Quarter',
+        title: <b>1st Quarter</b>,
         dataIndex: 'Quarter1st',
      },
       {
-         title: '2nd Quarter',
+         title: <b>2nd Quarter</b>,
          dataIndex: 'Quarter2nd',
       },
       {
-         title: '3rd Quarter',
+         title: <b>3rd Quarter</b>,
          dataIndex: 'Quarter3rd',
       },
       {
-        title: '4th Quarter',
+        title: <b>4th Quarter</b>,
         dataIndex: 'Quarter4th',
      },
      {
-        title: 'Final Grade',
+        title: <b>Final Grade</b>,
         dataIndex: 'FinalGrade',
      },
      {
-        title: 'Remarks',
+        title: <b>Remarks</b>,
         dataIndex: 'Remarks',
      }
                             

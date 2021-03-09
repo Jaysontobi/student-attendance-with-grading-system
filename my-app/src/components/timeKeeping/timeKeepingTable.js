@@ -5,19 +5,19 @@ const TimeKeepingTable = ({ details }) => {
 
    const columns = [
       {
-         title: 'Name',
+         title: <b>Name</b>,
          dataIndex: 'name',
       },
       {
-        title: 'ID Number',
+        title: <b>ID Number</b>,
         dataIndex: 'idNumber',
      },
       {
-         title: 'Time In',
+         title: <b>Time In</b>,
          dataIndex: 'timeIn',
       },
       {
-         title: 'Time Out',
+         title: <b>Time Out</b>,
          dataIndex: 'timeOut',
       },
                             

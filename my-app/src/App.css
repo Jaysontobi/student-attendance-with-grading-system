@@ -2,7 +2,8 @@
   
   /* CUSTOM CSS */
   body {
-    font-family: "Poppins" !important;
+    /* font-family: "Poppins" !important; */
+    font-family: "Montserrat" !important;
   }
   
   .h-41 {
@@ -11,6 +12,10 @@
   
   .h-64 {
     height: 64vh !important;
+  }
+    
+  .h-70 {
+    height: 68vh;
   }
   
   .h-79 {
@@ -27,6 +32,10 @@
   
   .w-100P {
     width: 100% !important;
+  }
+ 
+  .w-90P {
+    width: 90% !important;
   }
   
   .ml-5 {
@@ -47,6 +56,10 @@
   
   .mr-30 {
     margin-right: 45px !important;
+  }
+
+  .mr-10 {
+    margin-right: 10px !important;
   }
   
   .mb-5 {
@@ -81,6 +94,10 @@
     margin-bottom: 40px !important;
   }
   
+  .mt-5P {
+    margin-top: 6% !important;
+  }
+  
   .mt-5 {
     margin-top: 5px !important;
   }
@@ -91,6 +108,14 @@
   
   .mt-10P {
     margin-top: 10% !important;
+  }
+  
+  .mt-15P {
+    margin-top: 15% !important;
+  }
+    
+  .mt-50P {
+    margin-top: 50% !important;
   }
   
   .mt-15 {
@@ -241,7 +266,7 @@
   .text-center {
     text-align: center !important;
   }
-  
+
   .text-white {
     color: white !important;
   }
@@ -261,6 +286,10 @@
   .bg-white {
     background-color: white !important;
   }
+
+  .bg-orange {
+    background-color: orange !important;
+  }
   
   .bg-gray {
     background-color: gray !important;
@@ -272,6 +301,14 @@
   
   .bg-green {
     background-color: rgb(33, 155, 64) !important;
+  }
+
+  .bg-greenSideBar {
+    background-color: green !important;
+  }
+
+  .bg-greenSubMenu {
+    background-color: hsl(128, 53%, 39%) !important;
   }
   
   .bg-orange {
@@ -292,6 +329,7 @@
   }
   
   .sider {
+    background-color: green !important;
     height: 100vh;
     color: white;
   }
@@ -301,11 +339,12 @@
     height: 50px !important;
     color: white !important;
     line-height: 50px !important;
+    /* background-color: hsl(128, 53%, 39%) !important; */
   }
   
   .font {
-    font-family: 'Poppins', cursive;
-    letter-spacing: 4px;
+    font-family: 'Montserrat', cursive;
+    letter-spacing: 2px;
     font-size: 15px;
   }
   
@@ -328,6 +367,7 @@
     justify-content: center !important;
     font-size: 30px;
     border-bottom: solid 1px lightgray;
+    background-color: green !important;
   }
   
   .addBranch,
@@ -438,10 +478,10 @@
     height: 100vh;
     display: flex !important;
     justify-content: center !important;
+    /* background-image: url("/details.jpg"); */
   }
   
-  .loginCover {
-
+  .contentLoginCover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -454,7 +494,8 @@
   }
   
   .contentLogin {
-    margin-top: 6%;
+    /* margin-top: 10%; */
+    /* background-image: url("/details.jpg"); */
   }
   
   .btn-login {
@@ -463,7 +504,7 @@
     border-radius: 6px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: black;
+    background-color: green;
     color: white;
   
   }
@@ -491,6 +532,18 @@
     width: 100%;
   }
   
+  .btn-save {
+    border: 1px solid hsl(128, 53%, 39%);
+    background-color: hsl(128, 53%, 39%) !important;
+    color: white !important;
+  }
+  
+  .btn-add {
+    border: 1px solid #39a9e9;
+    background-color: #39a9e9 !important;
+    color: white !important;
+  }
+
   .btn-black {
     border: 1px solid black;
     background-color: black !important;
@@ -797,6 +850,27 @@
     height: 50px;
     width: 100px !important;
   }
+
+  .dashboard-padding {
+    padding-left: 25px !important;
+  }
+
+  .bg-homepage {
+    width: 100% !important;
+    height: 100vh !important;
+    background: url("details.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .btn-home,
+  .btn-about,
+  .btn-contact,
+  .btnLogin {
+    margin-top: 5% !important;
+    border: 1px solid black !important;
+  }
+
+  
   
   /* End Kiosk Custom CSS */
   

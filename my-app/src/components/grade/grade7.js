@@ -1,6 +1,6 @@
 import React from 'react';
 import { Drawer, Card, Button, Typography, Icon, Row, Col, Spin } from 'antd';
-import { PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons';
+import { PlusCircleOutlined, RiseOutlined } from '@ant-design/icons';
 import GradeForm from './gradeForm'
 import TeacherForm from './teacherForm'
 import StudentGradeTable from '../userDetails/gradeTable'
@@ -51,21 +51,21 @@ const GradePage = () => {
   return (
     <Card className="h-82 p-70">
         <Spin spinning={loading} delay={0}>
-    <Row>
-      <Col lg={{ span: 12 }}>
-        <Typography.Title level={3}>Grade7 Management</Typography.Title>
+    <Row className="mt-15">
+      <Col lg={{ span: 13 }}>
+        <Typography.Title level={3} className="ml-15">Grade7 Management</Typography.Title>
       </Col>
-      <Col lg={{ span: 12 }}>
-      {JSON.parse(sessionStorage.user).role === "Admin" ?       <Button className="right" type="save " onClick={() => showTeacher("7")}>
-          <MinusCircleOutlined type="minus-circle" /> Add teacher
+      <Col lg={{ span: 10 }}>
+      {JSON.parse(sessionStorage.user).role === "Admin" ?       <Button className="right ml-10 btn-add" type="save " onClick={() => showTeacher("7")}>
+          <PlusCircleOutlined type="minus-circle" /> Add teacher
              </Button>: null
              }
-                                               {JSON.parse(sessionStorage.user).role === "Admin" ?       <Button className="right" type="save " onClick={() => showAdvisor("7")}>
-          <MinusCircleOutlined type="minus-circle" /> Add Advisor
+                                               {JSON.parse(sessionStorage.user).role === "Admin" ?       <Button className="right ml-10 bg-gray text-white" type="save " onClick={() => showAdvisor("7")}>
+          <PlusCircleOutlined type="minus-circle" /> Add Advisor
              </Button> : null}
              {JSON.parse(sessionStorage.user).role === "Admin" ?   
-        <Button className="right" onClick={() => upgradeStudent()}>
-          <MinusCircleOutlined type="minus-circle" /> Upgrade
+        <Button className="right btn-save" onClick={() => upgradeStudent()}>
+          <RiseOutlined type="minus-circle" /> Upgrade
              </Button>
         : null}
       </Col>

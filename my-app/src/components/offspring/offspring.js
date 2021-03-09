@@ -18,9 +18,9 @@ const OffspringPage = () => {
   } = GradeAction({});
   return (
     <Card className="h-82 p-70">
-    <Row>
+    <Row className="mt-15">
       <Col lg={{ span: 12 }}>
-        <Typography.Title level={3}>Student Grade</Typography.Title>
+        <Typography.Title level={3} className="ml-15">Student Grade</Typography.Title>
       </Col>
       <Col lg={{ span: 12 }}>
       </Col>
